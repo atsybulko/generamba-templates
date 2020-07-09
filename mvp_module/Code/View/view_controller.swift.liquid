@@ -1,0 +1,54 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import UIKit
+
+final class {{ module_info.name }}ViewController: BaseViewController, {{ module_info.name }}ViewInput, ModuleTransitionable {
+
+    // MARK: - Properties
+
+    var output: {{ module_info.name }}ViewOutput?
+
+    // MARK: - UIViewController
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupUI()
+        output?.viewDidLoad()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        output?.viewWillAppear()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        output?.viewDidAppear()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        output?.viewWillDisappear()
+        super.viewWillDisappear(animated)
+    }
+
+    // MARK: - Setup UI
+    
+    func setupUI() {
+
+	}
+
+	// MARK: - Reload
+    
+    override func reload() {
+        
+    }
+
+    // MARK: - {{ module_info.name }}ViewInput
+
+}
