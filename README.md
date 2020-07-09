@@ -4,7 +4,7 @@ This repository contains a list of [Generamba](https://github.com/rambler-digita
 
 The detailed information about a template structure is available in [Generamba Wiki](https://github.com/rambler-digital-solutions/Generamba/wiki/Template-Structure).
 
-## Installation
+### Installation
 
 To install a template just put these strings in your `Rambafile` and run `generamba template install` in Terminal
 
@@ -17,3 +17,7 @@ catalogs:
 templates:
 - {name: needed_template_name}
 ```
+
+
+### Add new module
+Run `generamba gen [MODULE_NAME] [TEMPLATE_NAME]`
