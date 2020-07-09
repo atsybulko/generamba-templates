@@ -12,7 +12,7 @@ code_files:
 - {name: Configurator/ModuleConfigurator.swift, path: Code/Configurator/module_configurator.swift.liquid}
 
 # Router layer
-- {name: Router/RouterInput.swift, path: Code/Router/router_input.swift.liquid
+- {name: Router/RouterInput.swift, path: Code/Router/router_input.swift.liquid}
 - {name: Router/Router.swift, path: Code/Router/router.swift.liquid}
 
 # Presenter layer
